@@ -6,6 +6,7 @@ dotfiles
 (Windowsのみ)
 
     $ git clone https://github.com/k1lowM/dotfiles.git ~/dotfiles
+    $ cd ~/dotfiles
     $ ./mklink.bat
     $ git submodule update --init
 
