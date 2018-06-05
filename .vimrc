@@ -7,7 +7,11 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim "vundleのインストール先
+if has('vim_starting')
+	" 初回起動時のみruntimepathにvundleのパスを指定する
+	set rtp+=~/.vim/bundle/Vundle.vim "vundleのインストール先
+endif
+
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
