@@ -71,4 +71,7 @@ NERDTree(プラグイン)
   - ファイルをtree表示してくれる
     :NERDTree
 
+  - ブックマークを表示する
+    B
+
 vim:set ts=4 sts=2 sw=2 tw=78 et ft=memo:
