@@ -8,8 +8,8 @@ set nocompatible
 filetype off
 
 if has('vim_starting')
-	" 初回起動時のみruntimepathにvundleのパスを指定する
-	set rtp+=~/.vim/bundle/Vundle.vim "vundleのインストール先
+    " 初回起動時のみruntimepathにvundleのパスを指定する
+    set rtp+=~/.vim/bundle/Vundle.vim "vundleのインストール先
 endif
 
 call vundle#begin()
@@ -18,7 +18,7 @@ Plugin 'VundleVim/Vundle.vim'
 " 導入したいプラグインを以下に列挙
 " Plugin '[Github Author]/[Github repo]' の形式で記入
 " Bundle~とかいうのは昔の名残だから使わないでね
-" 追加したら:source _vimrc,:PluginInstallを実行
+" 追加したら:source .vimrc,:PluginInstallを実行
 
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'sjl/badwolf'
@@ -60,8 +60,8 @@ set clipboard+=unnamed
 " $VIMRUNTIME/vimrc_example.vim
 "----------------------------------------
 augroup vimrcEx
-  autocmd!
-  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line('$') | exe "normal! g`\"" | endif
+    autocmd!
+    autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line('$') | exe "normal! g`\"" | endif
 augroup END
 
 " 保存されていないファイルがあるときでも別のファイルを開くことが出来る
@@ -174,3 +174,9 @@ let g:miniBufExplorerAutoStart = 0
 "hi link MBEVisibleChanged Title
 "hi link MBEVisibleActiveNormal StatusLine
 "hi link MBEVisibleActiveChanged Error
+
+"----------------------------------------
+" NERDTree
+"----------------------------------------
+" 隠しファイルの表示(キーコマンドでは「I」)
+let g:NERDTreeShowHidden = 1
