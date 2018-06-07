@@ -1,8 +1,8 @@
 "==========================================
-" •\¦İ’è
+" è¡¨ç¤ºè¨­å®š
 "==========================================
 "----------------------------------------
-" ƒJƒ‰[ƒXƒL[ƒ€
+" ã‚«ãƒ©ãƒ¼ã‚¹ã‚­ãƒ¼ãƒ 
 "----------------------------------------
 " colorscheme desert
 " colorscheme molokai
@@ -11,7 +11,7 @@ syntax on
 set t_Co=256
 
 "----------------------------------------
-" ƒtƒHƒ“ƒg
+" ãƒ•ã‚©ãƒ³ãƒˆ
 "----------------------------------------
 set guifont=Consolas:h9,Lucida_Console:h9:w5
 set guifontwide=MS_Gothic:h9
@@ -19,25 +19,25 @@ set encoding=utf-8
 set fileencodings=utf-8,euc-jp,sjis
 set linespace=0
 
-" (ƒƒjƒ…[•¶š‰»‚¯‘Îô)
+" (ãƒ¡ãƒ‹ãƒ¥ãƒ¼æ–‡å­—åŒ–ã‘å¯¾ç­–)
 source $VIMRUNTIME/delmenu.vim
 set langmenu=ja_jp.utf-8
 source $VIMRUNTIME/menu.vim
 
 "----------------------------------------
-" –³‘Ê‚É”wŒi“§‰ß‚·‚é
+" ç„¡é§„ã«èƒŒæ™¯é€éã™ã‚‹
 "----------------------------------------
-" focus‚·‚é‚Æ•s“§–¾‚ğ”Z‚­Afocus‚ğŠO‚·‚Æ”–‚­
+" focusã™ã‚‹ã¨ä¸é€æ˜ã‚’æ¿ƒãã€focusã‚’å¤–ã™ã¨è–„ã
 autocmd FocusGained * set transparency=245
 autocmd FocusLost * set transparency=210
 
 "----------------------------------------
-" TabAs––‚Ì”¼ŠpƒXƒy[ƒX‚ğ‚ÌFw’è
+" Tabã€è¡Œæœ«ã®åŠè§’ã‚¹ãƒšãƒ¼ã‚¹ã‚’ã®è‰²æŒ‡å®š
 "----------------------------------------
-highlight SpecialKey guifg=LightRed
+" highlight SpecialKey guifg=#84474e
 
 "----------------------------------------
-" ƒJƒŒƒ“ƒgs‚ğƒnƒCƒ‰ƒCƒg
+" ã‚«ãƒ¬ãƒ³ãƒˆè¡Œã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆ
 "----------------------------------------
 set cursorline
 highlight CursorLine  guifg=NONE guibg=#282828
@@ -46,4 +46,7 @@ highlight CursorLine  guifg=NONE guibg=#282828
 set cursorcolumn
 highlight CursorColumn guibg=#282828
 
-
+" è¡Œç•ªå·ãƒã‚¤ãƒ©ã‚¤ãƒˆ
+hi CursorLineNr term=bold ctermfg=6 gui=bold guifg=Yellow
+" hi CursorLineNr term=bold ctermfg=6 gui=bold guifg=#aeee00
+" hi CursorLineNr term=bold ctermfg=6 gui=bold guifg=#ffa724

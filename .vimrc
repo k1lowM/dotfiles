@@ -94,7 +94,6 @@ set shiftwidth=4
 "----------------------------------------
 set list
 set listchars=tab:>.,trail:-
-highlight SpecialKey guifg=LightRed
 
 "----------------------------------------
 " 全角スペースを表示
