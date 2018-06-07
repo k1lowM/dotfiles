@@ -152,6 +152,9 @@ vnoremap <silent> <C-x>   :ContinuousNumber <C-x><CR>
 " Smarter tab line有効化
 let g:airline#extensions#tabline#enabled = 1
 
+" 空白エラーの検出を無効にする
+let g:airline#extensions#whitespace#enabled = 0
+
 " vim-airline-themes
 " その場で確認するときは、:AirlineTheme {theme-name}
 let g:airline_theme = 'durant'
