@@ -1,2 +1,4 @@
 VimMemo.txt ~\.vim\VimMemo.txt
+.vimrc ~\.vimrc
+.gvimrc ~\.gvimrc
 

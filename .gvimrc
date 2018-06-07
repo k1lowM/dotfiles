@@ -32,21 +32,23 @@ autocmd FocusGained * set transparency=245
 autocmd FocusLost * set transparency=210
 
 "----------------------------------------
-" Tab、行末の半角スペースをの色指定
+" ハイライト
 "----------------------------------------
+" Tab、行末の半角スペースをの色指定
 " highlight SpecialKey guifg=#84474e
 
-"----------------------------------------
-" カレント行をハイライト
-"----------------------------------------
+" カレント行
 set cursorline
-highlight CursorLine  guifg=NONE guibg=#282828
-"highlight CursorLine term=reverse cterm=reverse
+highlight CursorLine guifg=NONE guibg=#282828
 
+" カレント列
 set cursorcolumn
 highlight CursorColumn guibg=#282828
 
-" 行番号ハイライト
+" 行番号
 hi CursorLineNr term=bold ctermfg=6 gui=bold guifg=Yellow
 " hi CursorLineNr term=bold ctermfg=6 gui=bold guifg=#aeee00
 " hi CursorLineNr term=bold ctermfg=6 gui=bold guifg=#ffa724
+
+" 括弧
+hi MatchParen ctermfg=255 ctermbg=29 guifg=#ffffff guibg=#00875f
