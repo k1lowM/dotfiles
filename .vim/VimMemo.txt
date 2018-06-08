@@ -15,6 +15,15 @@
     map <silent>    <F2>    :bp<cr>
     map <silent>    <F3>    :bn<cr>
 
+ファイル操作
+  :E	// 開いているファイルのあるディレクトリを開く:Explore
+  :e .	// 現在のディレクトリを開く
+
+  * WindowsのExplorerを起動する
+    :silent ! start .   //カレントディレクトで開く
+
+  (:Unite fileの存在意義が。。。)
+
 viで開いているファイルの再読み込み(更新とかリロード的な)
   :e!
 
@@ -44,6 +53,17 @@ viで開いているファイルの再読み込み(更新とかリロード的�
 
   参考：VimやEmacsでカーソル下のリンクを開く動作の比較 - Qiita - https://qiita.com/skkzsh/items/34c1ee2c1910e9cb746e
 
+印刷
+  * html出力する(ブラウザで印刷する)
+    :TOhtml
+    :w
+    :silent ! start %   // ブラウザ表示
+
+    :TOhtml | :w | :silent ! start %  //一括
+
+  * (カラースキームを白にしてから)html出力する
+    :colorscheme Tomorrow | :TOhtml | :w | :silent ! start %
+
 vimrcについて
   * vimrc:
     Vimの共通設定を書くところ。（KaoriYa固有の起動時読込ファイル？）
@@ -64,6 +84,7 @@ unite.vim(プラグイン)
     :Unite file_mru     // 最近開いたファイルの一覧
     :Unite history/yank // ヤンクされたワードの一覧
     :Unite buffer       // バッファの一覧
+    :Unite -auto-preview colorscheme  // カラースキームのプレビュー
 
     参考: unite.vim について語る - C++でゲームプログラミング - http://d.hatena.ne.jp/osyo-manga/20130307/1362621589
 

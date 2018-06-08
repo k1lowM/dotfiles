@@ -18,15 +18,18 @@ Plugin 'VundleVim/Vundle.vim'
 " 導入したいプラグインを以下に列挙
 " Plugin '[Github Author]/[Github repo]' の形式で記入
 " Bundle~とかいうのは昔の名残だから使わないでね
-" 追加したら:source .vimrc,:PluginInstallを実行
+" 追加したら:source ~/.vimrc | :PluginInstallを実行
 
 Plugin 'fholgado/minibufexpl.vim'
+
 Plugin 'sjl/badwolf'
+Plugin 'chriskempson/vim-tomorrow-theme'
 
 " unite.vim関連
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/neomru.vim'
 Plugin 'Shougo/neoyank.vim'
+Plugin 'ujihisa/unite-colorscheme'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'

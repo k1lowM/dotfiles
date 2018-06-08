@@ -28,7 +28,7 @@ source $VIMRUNTIME/menu.vim
 " 無駄に背景透過する
 "----------------------------------------
 " focusすると不透明を濃く、focusを外すと薄く
-autocmd FocusGained * set transparency=245
+autocmd FocusGained * set transparency=255
 autocmd FocusLost * set transparency=210
 
 "----------------------------------------
