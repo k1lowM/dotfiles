@@ -77,9 +77,20 @@ set hidden
 " エンコード
 "----------------------------------------
 set encoding=utf-8
-set fileencodings=ucs-bom,utf-16le,iso-2022-jp,utf-8,utf-16be,euc-jp
+" set fileencodings=ucs-bom,utf-16le,iso-2022-jp,utf-8,utf-16be,euc-jp
 set linespace=0
 
+set fileencodings=ucs-bom,utf-16le,iso-2022-jp,utf-8,utf-16be,euc-jp
+if has('autocmd')
+    function! AU_ReCheck_FENC()
+        if &fileencoding =~# 'iso-2022-jp' && search("[^¥x01-¥x7e]", 'n')    == 0
+            "let &fileencoding='cp932'
+            let &fileencoding='utf-8'
+        endif
+    endfunction
+    autocmd BufReadPost * call AU_ReCheck_FENC()
+endif
+"au BufReadPost * if search('¥S', 'w') == 0 | set fenc=cp932 | endif
 "----------------------------------------
 " Tab、行末の半角スペースを明示的に表示する
 "----------------------------------------
