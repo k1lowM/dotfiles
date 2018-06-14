@@ -15,9 +15,6 @@ set t_Co=256
 "----------------------------------------
 set guifont=Consolas:h9,Lucida_Console:h9:w5
 set guifontwide=MS_Gothic:h9
-set encoding=utf-8
-set fileencodings=utf-8,euc-jp,sjis
-set linespace=0
 
 " (メニュー文字化け対策)
 source $VIMRUNTIME/delmenu.vim
