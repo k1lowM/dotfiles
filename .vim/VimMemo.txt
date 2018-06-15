@@ -86,6 +86,9 @@ unite.vim(プラグイン)
     :Unite buffer       // バッファの一覧
     :Unite -auto-preview colorscheme  // カラースキームのプレビュー
 
+  * プレビューしたい場合は
+    :Unite -auto-preview ほげほげ
+
     参考: unite.vim について語る - C++でゲームプログラミング - http://d.hatena.ne.jp/osyo-manga/20130307/1362621589
 
 NERDTree(プラグイン)
