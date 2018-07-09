@@ -4,5 +4,6 @@ mklink %HOMEPATH%"\.NERDTreeBookmarks" %HOMEPATH%"\dotfiles\.vim\.NERDTreeBookma
 mklink /D %HOMEPATH%"\.vim" %HOMEPATH%"\dotfiles\.vim"
 
 mklink %HOMEPATH%"\.gitconfig" %HOMEPATH%"\dotfiles\.gitconfig"
+mklink /D %HOMEPATH%"\.ssh" %HOMEPATH%"\dotfiles\.ssh"
 
-exit 0
+rem exit 0
