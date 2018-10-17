@@ -154,6 +154,12 @@ nnoremap ZZ <Nop>
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
+" カーソルを表示行で移動する。物理行移動は<C-n>,<C-p>
+nnoremap j gj
+nnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up>   gk
+
 "----------------------------------------
 "縦に連番を入力する
 "----------------------------------------
