@@ -3,7 +3,7 @@ dotfiles
 
 ## how to set up.
 
-(Windowsのみ)
+(Windowsのみです)
 
     $ git clone https://github.com/k1lowM/dotfiles.git ~/dotfiles
     $ cd ~/dotfiles
