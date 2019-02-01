@@ -1,7 +1,7 @@
 dotfiles
 ====
 
-## how to set up.
+## how to set up
 
 (Windowsのみです)
 
