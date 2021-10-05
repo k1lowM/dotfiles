@@ -160,6 +160,9 @@ nnoremap k gk
 nnoremap <Down> gj
 nnoremap <Up>   gk
 
+" ino <Up> <Esc>gki
+" ino <Down> <Esc>gji
+
 "----------------------------------------
 "縦に連番を入力する
 "----------------------------------------
