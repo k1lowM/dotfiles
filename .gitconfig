@@ -4,7 +4,7 @@
 [gui]
 	encoding = utf-8
 [difftool "sourcetree"]
-	cmd = '' \"$LOCAL\" \"$REMOTE\"
+	cmd = "'' "
 [mergetool "sourcetree"]
 	cmd = "'' "
 	trustExitCode = true
