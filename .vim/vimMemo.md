@@ -104,22 +104,27 @@ Vimの個人設定を書くところ。
 
 ## プラグイン
 ### unite.vim
-#### 便利そうなコマンド
-    :Unite source       // unite-source の一覧
-    :Unite file         // カレントディレクトリのファイルとディレクトリ一覧
-    :Unite file_mru     // 最近開いたファイルの一覧
-    :Unite history/yank // ヤンクされたワードの一覧
-    :Unite buffer       // バッファの一覧
-    :Unite -auto-preview colorscheme  // カラースキームのプレビュー
-
-#### プレビューしたい場合は
-    :Unite -auto-preview ほげほげ
-
+便利そうなコマンド
+~~~
+:Unite source       // unite-source の一覧
+:Unite file         // カレントディレクトリのファイルとディレクトリ一覧
+:Unite file_mru     // 最近開いたファイルの一覧
+:Unite history/yank // ヤンクされたワードの一覧
+:Unite buffer       // バッファの一覧
+:Unite -auto-preview colorscheme  // カラースキームのプレビュー
+~~~
+プレビューしたい場合は
+~~~
+:Unite -auto-preview ほげほげ
+~~~
 参考: unite.vim について語る - C++でゲームプログラミング - http://d.hatena.ne.jp/osyo-manga/20130307/1362621589
 
 ### NERDTree
-#### ファイルをtree表示してくれる
-    :NERDTree
-
-#### ブックマークを表示する
-    B
+ファイルをtree表示してくれる
+~~~
+:NERDTree
+~~~
+ブックマークを表示する
+~~~
+B
+~~~
