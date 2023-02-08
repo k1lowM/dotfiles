@@ -117,7 +117,11 @@ if ! shopt -oq posix; then
 fi
 
 # gvim
+## for WSL2
 export PATH=$PATH:'/mnt/c/Users/MMS/app/vim82-kaoriya-win64'
+## for Windows bash
+export PATH=$PATH:'~/app/vim82-kaoriya-win64'
+
 # alias vim='vim.exe'
 alias gvim='gvim.exe'
 
