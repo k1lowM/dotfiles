@@ -3,8 +3,3 @@
 	email = makiuchi.k1low@gmail.com
 [gui]
 	encoding = utf-8
-[difftool "sourcetree"]
-	cmd = "'' "
-[mergetool "sourcetree"]
-	cmd = "'' "
-	trustExitCode = true
