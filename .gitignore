@@ -1,7 +1,1 @@
-.ssh/config.txt
-.ssh/id_git_rsa
-.ssh/id_rsa.pub
-.ssh/k1low
-.ssh/k1low.pub
-.ssh/known_hosts
-.ssh/known_hosts.old
+.vim/bundle/
