@@ -35,8 +35,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'scrooloose/nerdtree'
-
 Plugin 'banyan/recognize_charcode.vim'
+Plugin 'thinca/vim-fontzoom'
 
 call vundle#end()
 filetype plugin indent on
@@ -158,9 +158,6 @@ nnoremap k gk
 nnoremap <Down> gj
 nnoremap <Up>   gk
 
-" ino <Up> <Esc>gki
-" ino <Down> <Esc>gji
-
 "----------------------------------------
 "縦に連番を入力する
 "----------------------------------------
@@ -172,6 +169,25 @@ command! -count -nargs=1 ContinuousNumber let c = col('.')|for n in range(1, <co
 vnoremap <silent> <C-a>   :ContinuousNumber <C-a><CR>
 vnoremap <silent> <C-x>   :ContinuousNumber <C-x><CR>
 
+"==========================================
+" 表示設定
+"==========================================
+"----------------------------------------
+" カラースキーム
+"----------------------------------------
+colorscheme Tomorrow-Night-Bright
+colorscheme badwolf
+syntax on
+set t_Co=256
+
+"----------------------------------------
+" ハイライト
+"----------------------------------------
+" カレント行
+set cursorline
+
+" 行番号
+hi CursorLineNr term=bold cterm=NONE ctermfg=228 ctermbg=NONE
 
 "==========================================
 " 各種プラグイン設定
@@ -214,22 +230,9 @@ let g:miniBufExplorerAutoStart = 0
 " 隠しファイルの表示(キーコマンドでは「I」)
 let g:NERDTreeShowHidden = 1
 
-"==========================================
-" 表示設定
-"==========================================
 "----------------------------------------
-" カラースキーム
+" vim-fontzoom
 "----------------------------------------
-colorscheme Tomorrow-Night-Bright
-colorscheme badwolf
-syntax on
-set t_Co=256
+"デフォルトのキーマッピングを使用しない
+" let g:fontzoom_no_default_key_mappings = 1
 
-"----------------------------------------
-" ハイライト
-"----------------------------------------
-" カレント行
-set cursorline
-
-" 行番号
-hi CursorLineNr term=bold cterm=NONE ctermfg=228 ctermbg=NONE

@@ -45,3 +45,17 @@ hi CursorLineNr term=bold ctermfg=6 gui=bold guifg=Yellow
 
 " 括弧
 hi MatchParen ctermfg=255 ctermbg=29 guifg=#ffffff guibg=#00875f
+
+"==========================================
+" 各種プラグイン設定
+"==========================================
+"----------------------------------------
+" vim-fontzoom
+"----------------------------------------
+" source ~/.vim/bundle/vim-fontzoom/plugin/fontzoom.vim
+
+"キーマッピング
+" nmap <C-+> <Plug>(fontzoom-larger)
+" nmap <C--> <Plug>(fontzoom-smaller)
+" nmap <C-0> :Fontzoom!<CR><Esc>
+nmap 0 :Fontzoom!<CR><Esc>
