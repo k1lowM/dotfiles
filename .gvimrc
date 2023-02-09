@@ -4,8 +4,6 @@
 "----------------------------------------
 " カラースキーム
 "----------------------------------------
-" colorscheme desert
-" colorscheme molokai
 colorscheme badwolf
 syntax on
 set t_Co=256
@@ -44,8 +42,6 @@ highlight CursorColumn guibg=#282828
 
 " 行番号
 hi CursorLineNr term=bold ctermfg=6 gui=bold guifg=Yellow
-" hi CursorLineNr term=bold ctermfg=6 gui=bold guifg=#aeee00
-" hi CursorLineNr term=bold ctermfg=6 gui=bold guifg=#ffa724
 
 " 括弧
 hi MatchParen ctermfg=255 ctermbg=29 guifg=#ffffff guibg=#00875f
