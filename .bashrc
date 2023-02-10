@@ -116,13 +116,27 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# gvim
-## for WSL2
-export PATH=$PATH:'/mnt/c/Users/MMS/app/vim82-kaoriya-win64'
-## for Windows bash
-export PATH=$PATH:'~/app/vim82-kaoriya-win64'
+# OSごとに固有の設定
+case `uname -a` in
+  Darwin* )
+    # Darwin(MacOS)に固有の設定はここに書く
+    # 例）brew
+    [ -f "/usr/local/bin/brew" ] && export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+    ;;
+  Linux* )
+    # Linuxに固有の設定はここに書く
+    alias pingNet='ping google.com'
 
-# alias vim='vim.exe'
+    ## for WSL2
+    export PATH=$PATH:'/mnt/c/Users/MMS/app/vim82-kaoriya-win64'
+    ;;
+  MINGW* )
+    # WindowsのMINGWに固有の設定はここに書く
+    alias pingNet='ping -t google.com'
+
+    ## for Windows bash
+    export PATH=$PATH:'~/app/vim82-kaoriya-win64'
+    ;;
+esac
+
 alias gvim='gvim.exe'
-
-alias pingNet='ping -t google.com'
