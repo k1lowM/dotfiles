@@ -1,4 +1,4 @@
-rem vimŠÖ˜A
+rem vim
 mklink %HOMEPATH%"\.vimrc" %HOMEPATH%"\dotfiles\.vimrc"
 mklink %HOMEPATH%"\.gvimrc" %HOMEPATH%"\dotfiles\.gvimrc"
 mklink %HOMEPATH%"\.NERDTreeBookmarks" %HOMEPATH%"\dotfiles\.vim\.NERDTreeBookmarks"
