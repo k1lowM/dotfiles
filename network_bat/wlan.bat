@@ -1,4 +1,4 @@
-call resetNetwork.bat
+call %HOMEPATH%"\dotfiles\network_bat\resetNetwork.bat"
 
 netsh interface set interface "Ethernet" disable
 netsh interface set interface "Wi-Fi" enabled
