@@ -1,8 +1,8 @@
-rem WinSockï¼ˆWindows Sockets APIï¼‰ã®è¨­å®šæƒ…å ±ã‚’åˆæœŸåŒ–
+rem WinSockiWindows Sockets APIj‚Ìİ’èî•ñ‚ğ‰Šú‰»
 netsh winsock reset
 
-rem IPã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®šã‚’åˆæœŸåŒ–
+rem IPƒAƒhƒŒƒXİ’è‚ğ‰Šú‰»
 netsh int ip reset
 
-rem DNSã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚’åˆæœŸåŒ–
+rem DNSƒLƒƒƒbƒVƒ…‚ğ‰Šú‰»
 ipconfig /flushdns
