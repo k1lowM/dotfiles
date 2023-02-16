@@ -20,22 +20,28 @@ Plugin 'VundleVim/Vundle.vim'
 " Bundle~とかいうのは昔の名残だから使わないでね
 " 追加したら:source ~/.vimrc | :PluginInstallを実行
 
-Plugin 'fholgado/minibufexpl.vim'
+" Plugin 'fholgado/minibufexpl.vim'
 
+" カラースキーム
 Plugin 'sjl/badwolf'
 Plugin 'chriskempson/vim-tomorrow-theme'
 
 " unite.vim関連
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/neomru.vim'
-Plugin 'Shougo/neoyank.vim'
-Plugin 'ujihisa/unite-colorscheme'
+" Plugin 'Shougo/unite.vim'
+" Plugin 'Shougo/neomru.vim'
+" Plugin 'Shougo/neoyank.vim'
+" Plugin 'ujihisa/unite-colorscheme'
 
+" ステータスバーをかっこよく
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
+
+" 文字コード自動判別
 Plugin 'banyan/recognize_charcode.vim'
+
+" gvimでの拡大縮小表示
 Plugin 'thinca/vim-fontzoom'
 
 call vundle#end()
@@ -208,6 +214,9 @@ let g:airline_theme = 'durant'
 " タブに番号を表示
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 
+" ハイライティングをキャッシュ
+let g:airline_highlighting_cache = 1
+
 "----------------------------------------
 " MiniBufExpl
 "----------------------------------------
@@ -235,4 +244,3 @@ let g:NERDTreeShowHidden = 1
 "----------------------------------------
 "デフォルトのキーマッピングを使用しない
 " let g:fontzoom_no_default_key_mappings = 1
-

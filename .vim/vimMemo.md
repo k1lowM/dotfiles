@@ -128,3 +128,17 @@ Vimの個人設定を書くところ。
 ~~~
 B
 ~~~
+
+
+## 起動時間計測
+コマンドラインにて、以下のオプションでvimを起動すると、指定ファイルに対して「起動に要した時間」が出力される。
+~~~
+# 起動時間を計測
+$ vim --startuptime /tmp/startuptime.txt
+
+# 計測結果を確認
+$ vim startuptime /tmp/startuptime.txt
+~~~
+
+※vim-kaoriyaのルートにあるデフォルトvimrc,gvimrcは、かなり重いので名前を変更したり削除したりして読み込まないようにする。
+なくても問題なく動く。
